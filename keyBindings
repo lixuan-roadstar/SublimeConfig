@@ -1,0 +1,24 @@
+[
+
+{ "keys":["f2"],
+    "caption": "SublimeREPL: Python3",
+    "command": "run_existing_window_command",
+    "args":
+    {"id": "repl_python3",
+    "file": "config/Python3/Main.sublime-menu"}},
+
+{ "keys": ["f1"],
+    "command": "repl_open",
+    "caption": "Python",
+    "mnemonic": "p",
+    "args": {
+        "type": "subprocess",
+        "encoding": "utf8",
+        "cmd": ["python3", "-i", "-u", "$file"],
+        "cwd": "$file_path",
+        "syntax": "Packages/Python/Python.tmLanguage",
+        "external_id": "python"}
+}
+
+]
+
